@@ -1,8 +1,7 @@
 
-var groceryCart = ['bacon', 'eggs', 'hasbrowns', 'milk' ]
-
 var groceryItem = {
     item: 'bacon',
+    groceryCart: ['bacon', 'eggs', 'hasbrowns', 'milk'],
     inStock: 40,
     lowStock: false,
     stockOnHand : function () {
@@ -10,8 +9,9 @@ var groceryItem = {
         
     }
 }
-var groceryItem = {
+var groceryItemTwo = {
     item: 'eggs',
+    groceryCart: ['bacon', 'eggs', 'hasbrowns', 'milk'],
     inStock: 12,
     lowStock: true,
     stockOnHand : function () {
@@ -19,8 +19,9 @@ var groceryItem = {
         
     }
 }
-var groceryItem = {
+var groceryItemThree = {
     item: 'hashbrowns',
+    groceryCart: ['bacon', 'eggs', 'hasbrowns', 'milk'],
     inStock: 45,
     lowStock: false,
     stockOnHand : function () {
@@ -28,8 +29,9 @@ var groceryItem = {
         
     }
 }
-var groceryItem = {
+var groceryItemFour = {
     item: 'milk',
+    groceryCart: ['bacon', 'eggs', 'hasbrowns', 'milk'],
     inStock: 56,
     lowStock: false,
     stockOnHand : function () {
@@ -37,4 +39,5 @@ var groceryItem = {
         
     }
 }
-console.log ('this is my grocery cart');
+var groceryCartsArray = [groceryItem, groceryItemTwo, groceryItemThree, groceryItemFour];
+ console.log (groceryCartsArray);
