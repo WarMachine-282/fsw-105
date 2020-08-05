@@ -41,3 +41,9 @@ var groceryItemFour = {
 }
 var groceryCartsArray = [groceryItem, groceryItemTwo, groceryItemThree, groceryItemFour];
  console.log (groceryCartsArray);
+
+//  var arr= ["1","2","3"]
+// function getFirstValue(array) {
+// 	return(array[array.length - 1])
+// }
+// console.log(getFirstValue(arr))
