@@ -7,7 +7,7 @@ if (5 > 3) {
   console.log("Is greater than");
 } else
   console.log("Is not greater than")
-
+// ternary form
 5 > 3 ? console.log("Is greater than") : console.log("Is not greater than")
 // 2.) Write an if statement that prints "is the length" if the length of "cat" is 3.
 
