@@ -1,0 +1,21 @@
+
+
+
+
+
+// function add(a, b) {
+//   console.log(a + b);
+// }
+
+// add(3, 6);
+
+// add(5);
+
+// add("bob", " hi");
+
+// add("bob", 2);
+
+// if, if else in one ternary below
+// string.match(strDog) ? console.log("Is a string") 
+// // : 5 > 2 ? console.log("five is greater than two")
+// : console.log("Is not a string");

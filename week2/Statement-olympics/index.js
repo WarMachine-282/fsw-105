@@ -12,9 +12,9 @@ if (5 > 3) {
 // 2.) Write an if statement that prints "is the length" if the length of "cat" is 3.
 
 if (strCat.length == 3)
-    console.log("Is the length");
+  console.log("Is the length");
 else 
-    console.log("Is not equal")
+  console.log("Is not equal")
 
 // ternary form
 strCat.length == 3 ? console.log("Is the length") : console.log("Is not equal")
@@ -22,9 +22,9 @@ strCat.length == 3 ? console.log("Is the length") : console.log("Is not equal")
 // 3.) Write an if/else statement that checks if "cat" is equal to "dog" and prints, "not the same" when they are not equal.
 
 if (strCat === strDog) {
-    console.log("Is the same");
+  console.log("Is the same");
 } else
-    console.log("Not the same");
+  console.log("Not the same");
 
 // ternary form
 (strCat === strDog) ? console.log("Is the same") : console.log("Not the same")
@@ -96,9 +96,9 @@ if (1 <= 2 && 2 === 4) {
 
 var string = "dog"
 if(string.match(strDog))
-    console.log("Is a string")
+  console.log("Is a string")
 else 
-    console.log("Is not a string")
+  console.log("Is not a string")
 // ternary form
 string.match(strDog) ? console.log("Is a string") : console.log("Is not a string");
 
@@ -106,44 +106,45 @@ string.match(strDog) ? console.log("Is a string") : console.log("Is not a string
 
 var boolean = true;
 if(typeof boolean === "boolean")
-    console.log("true")
+  console.log("true")
 else
-    console.log("false")
+  console.log("false")
 // ternary form
 typeof boolean === "boolean" ? console.log("true") : console.log("false")
 
 // 3.) Write an if statement that checks to see if a variable has been defined or not.
 
+var item= "test"
+if (typeof item === "undefined"){
+  console.long("This variable is undefined")
+} else {
+  console.log("This variable is defined")
+}
+// ternary form
+typeof item === "undefined" ? console.long("This variable is undefined") : console.log("This variable is defined")
+
+// 4.) Write an if statement asking if "s" greater than 12?
+
+if ("s" > 12) {
+  console.log("Is greater than")
+} else {
+  console.log("Is not greater than")
+}
+// ternary form
+"s" > 12 ? console.log("Is greater than") : console.log("Is not greater than")
 
 
+// 5.) Try it with a few more letters and a few numbers.
 
+if ("sdhs" > 11142) {
+  console.log("Is greater than")
+} else {
+  console.log("Is not greater than")
+}
+// ternary form
+"sdhs" > 11142 ? console.log("Is greater than") : console.log("Is not greater than")
 
+// 6.) Write a ternary statement that console.logs whether a number is odd or even.
+var myNumber = 10
 
-
-
-
-
-
-
-
-
-
-
-
-
-// function add(a, b) {
-//   console.log(a + b);
-// }
-
-// add(3, 6);
-
-// add(5);
-
-// add("bob", " hi");
-
-// add("bob", 2);
-
-// if, if else in one ternary below
-// string.match(strDog) ? console.log("Is a string") 
-// // : 5 > 2 ? console.log("five is greater than two")
-// : console.log("Is not a string");
+myNumber % 5 == 0 ? console.log('It is even') : console.log('It is odd');
