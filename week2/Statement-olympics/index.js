@@ -66,6 +66,7 @@ if (person.name.charAt(0) === "B" && person.age >= 18) {
 person.name.charAt(0) === "B" && person.age >= 18 ? console.log("Is allowed to go to movies") : console.log("Is not allowed to go to movies")
 
 // Silver Medal
+
 // 1.)Write an if/else if/else statement that prints "strict" if 1 strictly equals "1", prints "loose" or "abstract" if 1 equals "1" without type checking, and prints "not equal at all" if it doesn't print the other stuff.
 
 var one = 1;
