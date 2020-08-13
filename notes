@@ -19,3 +19,16 @@
 // string.match(strDog) ? console.log("Is a string") 
 // // : 5 > 2 ? console.log("five is greater than two")
 // : console.log("Is not a string");
+
+
+ function isOldEnoughWithName() {
+    for (var i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++){ 
+        if (peopleWhoWantToSeeMadMaxFuryRoad[0].age >= 18 && peopleWhoWantToSeeMadMaxFuryRoad[i].gender === "male"){
+ 
+            console.log(peopleWhoWantToSeeMadMaxFuryRoad[0].name + " " + "Let him in to see Mad Max Fury Road");
+            }
+        else {  
+            console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + " " + "Let her in to see Mad Max Fury Road")
+        }
+    }
+};
