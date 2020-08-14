@@ -33,3 +33,12 @@ function doSomething(str) {
 }
   console.log(doSomething("Bam!"));
   console.log(doSomething("Flintstones, meet the Flintstones, they're the modern Stone Age family"));
+
+//*Extra credit*
+//5.) Write a function that accepts a number ‘n’ as a parameter. Then print the first ‘n’ Fibonacci numbers and return their sum.
+
+var fibonacciSequence = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144];
+
+function fibonacciSequence(n) {
+
+}
