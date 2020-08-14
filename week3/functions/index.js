@@ -19,7 +19,7 @@ console.log(largestNum(1, 2, 3));
 function oddOrEven(number) {
   return number % 2 ? "odd" : "even";
 }
-console.log(oddOrEven(2));
+  console.log(oddOrEven(5));
 
 //4.) Write a function that accepts a string as a parameter. If the length of the string is less than or equal to twenty characters long,
 //return the string concatenated with itself (string + string). If the string is more than twenty characters long, return the first half of the string.
@@ -31,5 +31,5 @@ function doSomething(str) {
     return str.slice(0, str.length / 2);
   }
 }
-console.log(doSomething("Bam!"));
-console.log(doSomething("Flintstones, meet the Flintstones, they're the modern Stone Age family"));
+  console.log(doSomething("Bam!"));
+  console.log(doSomething("Flintstones, meet the Flintstones, they're the modern Stone Age family"));
