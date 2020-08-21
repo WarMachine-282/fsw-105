@@ -37,7 +37,23 @@ function doSomething(str) {
 //*Extra credit*
 //5.) Write a function that accepts a number ‘n’ as a parameter. Then print the first ‘n’ Fibonacci numbers and return their sum.
 
-// var sfibonacciSequence = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144];
+// var fibonacciSequence = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144];
 
-// function fibonacciSequence(n) {
- // *EXTRA CREDIT INCOMPLETE*
+function fibonacciSequence(n) {
+  var name = [0, 1]
+  for (var i = 0; i < n - 1; i++){
+    console.log( name[name.length - 1] , "name[name.length - 1] ")
+    console.log( name[name.length - 2] , "name[name.length - 2]")
+    console.log( name[name.length - 1 ] + name[name.length - 2 ], "name[name.length - 1 ] + name[name.length - 2 ]")
+    name.push(name[name.length - 1 ] + name[name.length - 2 ])
+    console.log(name)
+  }
+  var total = 0
+  for (var e = 0; e < name.length; e++){
+    console.log(name[e])
+    total = total + name[e]
+    console.log(total, "total")
+  }
+}
+fibonacciSequence(6)
+// *EXTRA CREDIT INCOMPLETE*
