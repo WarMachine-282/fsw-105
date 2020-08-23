@@ -56,4 +56,3 @@ function fibonacciSequence(n) {
   }
 }
 fibonacciSequence(6)
-// *EXTRA CREDIT INCOMPLETE*
