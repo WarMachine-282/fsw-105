@@ -4,7 +4,7 @@ var secondNum = readlineSync.questionInt("Please enter the second number: ");
 var enteredOperator = readlineSync.question("What operation would you like to perform? add/sub/mul/div/quit: ");
 
 function addTwoNumbers(num1, num2){
-    return " Adding Number1: " + num1 + " with Number2 " + num2 + " Results in: " + (num1 + num2);
+    return " Adding Number1 : " + num1 + " with Number2 " + num2 + " Results in: " + (num1 + num2);
 }
 function subtractTwoNumbers(num1, num2){
     return " Subtracting Number1: " + num1 + " and Number2 " + num2 + " Results in: " + (num1 - num2);
