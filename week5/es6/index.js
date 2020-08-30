@@ -31,11 +31,11 @@ runForLoop(["cat", "dog"]);
 
 const carrots = ["bright orange", "ripe", "rotten"];
 
-mapVegetables = arr => {
-  return arr.map(function(carrot) {
+mapVegetables = (arr) => {
+  return arr.map(function (carrot) {
     return { type: "carrot", name: carrot };
   });
-}
+};
 console.log(mapVegetables([carrots]));
 
 //3.) Re-write this .filter() using an arrow function:
@@ -80,16 +80,49 @@ console.log(produceProduct(4, 4));
 //5.) Write a printString function that takes firstName, lastName,
 // and age as parameters and returns a string like the following: Hi Kat Stark, how does it feel to be 40?
 
-printString = (firstname ="Jane", lastname = "Doe", age = 100) => {
-    console.log("Hi " + firstname + " " + lastname + ", how does it feel to be " + age + "?" );
-}
+printString = (firstname = "Jane", lastname = "Doe", age = 100) => {
+  console.log(
+    "Hi " + firstname + " " + lastname + ", how does it feel to be " + age + "?"
+  );
+};
 printString("Kat", "Stark", "40");
 
 //6.) Use template literals to build the string from #5
 
 printString = (firstName = "Jane", lastName = "Doe", age = 100) => {
-    console.log(`Hi ${firstName} ${lastName}, how does it feel to be ${age}?`);
-}
+  console.log(`Hi ${firstName} ${lastName}, how does it feel to be ${age}?`);
+};
 printString("Kat", "Stark", 40);
 
 //7.) Use the shorthand syntax to make the following filter take up one line. Copy and paste the array to test it.
+
+const animals = [
+  {
+    type: "dog",
+    name: "theodore",
+  },
+  {
+    type: "cat",
+    name: "whiskers",
+  },
+  {
+    type: "pig",
+    name: "piglette",
+  },
+  {
+    type: "dog",
+    name: "sparky",
+  },
+];
+
+const dogsOnly = animals.filter((animals) => animals.type === "dog");
+console.log(dogsOnly);
+
+//8.) Using template literals, write a function that takes location and name parameters and outputs a message formatted like this:
+
+message = (firstName = "Jane", location = "state") => {
+  console.log(
+    `Hi ${firstName}! Welcome to ${location}. I hope you enjoy your stay. Please ask the president of ${location} if you need anything.`
+  );
+};
+console.log(message("Janice", "Hawaii"));
