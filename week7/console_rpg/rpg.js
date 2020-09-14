@@ -33,17 +33,17 @@ const zombieRpg = () => {
   if (playerOptions[option] == `Exit`) {
     return (playerHealth = 0);
   } else if (playerOptions[option] == `Inventory`) {
-    console.log(`${player}: \n ${playerHealth} \nInventory: ${inventory} `);
+    console.log(`\n${player}'s Health:${playerHealth} \nInventory: ${inventory} `);
   } else if (playerOptions[option] == `Walk`) {
     let key = Math.random();
     if (key <= 0.25) {
       console.log(`Everything looks clear.`);
     } else if (key >= 0.25) {
-      console.log(`${approachingZombie}!rauwhhehhhaw!`);
+      console.log(`${approachingZombie}! RAAAAUUUUGHHHH!\n`);
 
       while (zombieHealth > 0 && playerHealth > 0) {
         const runOrAttack = readlineSync.question(
-          `${player}, do you want to run (r) or do you want to attack (a)? `
+          `${player}, do you want to run (r) or do you want to attack (a)?\n `
         );
 
         switch (runOrAttack) {
@@ -51,11 +51,11 @@ const zombieRpg = () => {
             const runForIt = Math.random();
             if (runForIt < 0.5) {
               console.log(
-                `You escaped, however ${approachingZombie} hit you for ${zombieAttack} attack points`
+                `You escaped, however ${approachingZombie} hit you for ${zombieAttack} attack points\n`
               );
             } else {
               zombieHealth = 0;
-              console.log(`Look like you out-ran him!`);
+              console.log(`Look like you out-ran him!\n`);
               break;
             }
           case "a":
